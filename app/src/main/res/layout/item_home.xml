@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="@dimen/_25sdp"
+        android:textSize="@dimen/_16ssp"
+        android:background="@drawable/button_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/image_delete"
+        app:layout_constraintTop_toTopOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="@id/tv_name"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_twotone_delete_outline_24"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="221dp" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

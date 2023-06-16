@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Activity">
+
+    <TextView
+        android:id="@+id/tv_Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="انشاء حساب"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_user_name2"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/view"
+        android:inputType="text"
+        android:paddingStart="@dimen/_15sdp"
+        android:hint="اسم المستخدم"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Create" />
+
+    <EditText
+        android:id="@+id/et_Email2"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/view"
+        android:paddingStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="البريد الالكتروني"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_user_name2" />
+
+    <EditText
+        android:id="@+id/et_password2"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@drawable/view"
+        android:paddingStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="كلمة المرور"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_Email2" />
+
+    <Button
+        android:id="@+id/btn_Create"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_view"
+        android:text="انشاء حساب"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

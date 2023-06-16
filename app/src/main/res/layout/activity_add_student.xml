@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Student_Activity">
+    
+    
+    <TextView
+        android:id="@+id/tv_AddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/black"
+        android:text="اضافة طالب"/>
+
+    <EditText
+        android:id="@+id/et_FName"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@drawable/view"
+        android:paddingStart="@dimen/_15sdp"
+        android:hint="الاسم الاول"
+        app:layout_constraintTop_toBottomOf="@id/tv_AddStudent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        />
+
+    <EditText
+        android:id="@+id/et_LName"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@drawable/view"
+        android:paddingStart="@dimen/_15sdp"
+        android:hint="اسم العائلة"
+        app:layout_constraintTop_toBottomOf="@id/et_FName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/view"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="openDatePicker"
+        android:hint="تاريخ اليلاد"
+        android:paddingStart="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_LName" />
+
+    <CheckBox
+        android:id="@+id/cb_sql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="قواعد بيانات"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_age"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cb_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="جافا "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_sql"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cb_androud1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="ورش اندرويد"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_java"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <CheckBox
+        android:id="@+id/cb_android2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="تطوير اندرويد"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_androud1"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <CheckBox
+        android:id="@+id/cb_businesses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="ريادة الاعمال"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_android2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <CheckBox
+        android:id="@+id/cb_software"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="هندسة الابرمجيات"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_businesses"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_AddStudent"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_42sdp"
+        app:layout_constraintTop_toBottomOf="@id/cb_software"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_view"
+        android:text="اضافة"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
